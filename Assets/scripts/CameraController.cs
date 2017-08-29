@@ -14,8 +14,9 @@ public class CameraController : MonoBehaviour {
 	{
 		offset = transform.position - aim.transform.position;
 		aim.transform.position = player.transform.position;
-		aimLine.transform.position = aim.transform.position;
+//		aimLine.transform.position = aim.transform.position;
 //		Screen.lockCursor = true;
+		Cursor.visible = false;
 	}
 
 	void FixedUpdate()
